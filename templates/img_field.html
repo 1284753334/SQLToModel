@@ -1,0 +1,10 @@
+<form action="{% url 'app:imgfield' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token  %}
+    <span>用户名</span> <input type="text" name="username" placeholder="请输入用户名">
+    <hr>
+    <span>头像</span><input type="file" name = 'icon'>
+    <br>
+    <button>上传</button>
+
+
+</form>
